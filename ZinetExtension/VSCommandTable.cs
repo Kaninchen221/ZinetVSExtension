@@ -21,7 +21,8 @@ namespace ZinetExtension
     internal sealed partial class PackageIds
     {
         public const int Toolbar = 0x1000;
-        public const int ToolbarGroup = 0x1050;
+        public const int ZinetReflectCode = 0x0101;
+        public const int ZinetGenerateProject = 0x0102;
         public const int ZinetIconID = 0x0001;
     }
 }

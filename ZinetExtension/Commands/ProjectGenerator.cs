@@ -8,13 +8,14 @@ using ZinetExtension.Commands;
 
 namespace ZinetExtension
 {
-    [Command(PackageIds.ZinetReflectCode)]
-    internal sealed class ProjectReflection : BaseCommand<ProjectReflection>
+    [Command(PackageIds.ZinetGenerateProject)]
+    internal sealed class ProjectGenerator : BaseCommand<ProjectGenerator>
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
+
             ExecuteScript executeScript = new ExecuteScript();
-            await executeScript.ExecuteScriptAsync("generate_reflection.bat");
+            await executeScript.ExecuteScriptAsync("generate_project.bat");
         }
     }
 }

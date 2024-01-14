@@ -28,7 +28,11 @@
     <Groups>
       
       <!--Toolbar-->
-      <Group guid="ZinetExtension" id="ToolbarGroup" priority="0x0000">
+      <Group guid="ZinetExtension" id="ZinetReflectCode" priority="0x0000">
+        <Parent guid="ZinetExtension" id="Toolbar" />
+      </Group>
+
+      <Group guid="ZinetExtension" id="ZinetGenerateProject" priority="0x0000">
         <Parent guid="ZinetExtension" id="Toolbar" />
       </Group>
       
@@ -37,11 +41,19 @@
     <Buttons>
 
       <!--Toolbar-->
-      <Button guid="ZinetExtension" id="ToolbarGroup" priority="0x0100" type="Button">
-        <Parent guid= "ZinetExtension" id="ToolbarGroup" />
-        <Icon guid="ZinetExtension" id="ZinetIconID" />
+      <Button guid="ZinetExtension" id="ZinetReflectCode" priority="0x0100" type="Button">
+        <Parent guid= "ZinetExtension" id="ZinetReflectCode" />
+        <!--<Icon guid="ZinetExtension" id="ZinetIconID" /> -->
         <Strings>
-          <ButtonText>Zinet Reflect Code</ButtonText>
+          <ButtonText>Zinet Reflection</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="ZinetExtension" id="ZinetGenerateProject" priority="0x0101" type="Button">
+        <Parent guid= "ZinetExtension" id="ZinetGenerateProject" />
+        <!--<Icon guid="ZinetExtension" id="ZinetIconID" /> -->
+        <Strings>
+          <ButtonText>Zinet Generate Project</ButtonText>
         </Strings>
       </Button>
       
@@ -53,7 +65,8 @@
       
       <!--Toolbar-->
       <IDSymbol name="Toolbar" value="0x1000" />
-      <IDSymbol name="ToolbarGroup" value="0x1050" />
+      <IDSymbol name="ZinetReflectCode" value="0x0101" />
+      <IDSymbol name="ZinetGenerateProject" value="0x0102" />
       <IDSymbol name="ZinetIconID" value="1" />
       
     </GuidSymbol>
