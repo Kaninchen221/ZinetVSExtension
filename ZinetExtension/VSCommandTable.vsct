@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="ZinetExtension">
+
+    <Menus>
+      
+      <!--Toolbar-->
+      <Menu guid="ZinetExtension" id="Toolbar" type="Toolbar">
+        <CommandFlag>DefaultDocked</CommandFlag>
+        <Strings>
+          <ButtonText>Zinet Extension Toolbar</ButtonText>
+          <CommandName>Zinet Extension Toolbar</CommandName>
+        </Strings>
+      </Menu>
+      
+    </Menus>
+
+    <Bitmaps>
+      <Bitmap guid="ZinetExtension" href="Resources/zinet_reflector_icon.png" usedList="ZinetIconID"/>
+    </Bitmaps>
+    
+    <Groups>
+      
+      <!--Toolbar-->
+      <Group guid="ZinetExtension" id="ToolbarGroup" priority="0x0000">
+        <Parent guid="ZinetExtension" id="Toolbar" />
+      </Group>
+      
+    </Groups>
+
+    <Buttons>
+
+      <!--Toolbar-->
+      <Button guid="ZinetExtension" id="ToolbarGroup" priority="0x0100" type="Button">
+        <Parent guid= "ZinetExtension" id="ToolbarGroup" />
+        <Icon guid="ZinetExtension" id="ZinetIconID" />
+        <Strings>
+          <ButtonText>Zinet Reflect Code</ButtonText>
+        </Strings>
+      </Button>
+      
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="ZinetExtension" value="{b48202b7-d82b-4ea1-bff2-ae5edfe4b534}">
+      
+      <!--Toolbar-->
+      <IDSymbol name="Toolbar" value="0x1000" />
+      <IDSymbol name="ToolbarGroup" value="0x1050" />
+      <IDSymbol name="ZinetIconID" value="1" />
+      
+    </GuidSymbol>
+      
+  </Symbols>
+</CommandTable>
