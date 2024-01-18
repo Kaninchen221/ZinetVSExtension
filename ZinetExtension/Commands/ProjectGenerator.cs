@@ -15,7 +15,7 @@ namespace ZinetExtension
         {
 
             ExecuteScript executeScript = new ExecuteScript();
-            await executeScript.ExecuteScriptAsync("generate_project_files_AddressSanitizerOff.bat");
+            await executeScript.ExecutePythonScriptAsync("generate_project.py", "--AddressSanitizer false");
             await executeScript.ExecutePythonScriptAsync("build.py", "--BuildType Debug");
         }
     }
