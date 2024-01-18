@@ -53,7 +53,7 @@
         <Parent guid= "ZinetExtension" id="ZinetGenerateProject" />
         <!--<Icon guid="ZinetExtension" id="ZinetIconID" /> -->
         <Strings>
-          <ButtonText>Zinet Generate Project</ButtonText>
+          <ButtonText>Zinet Generate Project and Build</ButtonText>
         </Strings>
       </Button>
       
