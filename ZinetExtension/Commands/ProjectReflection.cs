@@ -14,7 +14,7 @@ namespace ZinetExtension
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             ExecuteScript executeScript = new ExecuteScript();
-            await executeScript.ExecuteScriptAsync("generate_reflection.bat");
+            await executeScript.ExecutePythonScriptAsync("reflection.py");
         }
     }
 }
